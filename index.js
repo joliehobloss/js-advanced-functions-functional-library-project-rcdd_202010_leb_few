@@ -8,6 +8,10 @@ const fi = (function() {
 let array = (collection instanceof Array) ? collection.slice() : Object.values(collection);
   for (let i = 0; i < array.length; i++)
        callback(array[i]);
+<<<<<<< HEAD
+
+      return collection;
+=======
 
       return collection;
 
@@ -19,6 +23,21 @@ let array = (collection instanceof Array) ? collection.slice() : Object.values(c
         collection = Object.values(collection)
       for (let i = 0; i < collection.length; i++)
         array.push(callback(collection[i]))
+>>>>>>> 9d11f0364ba3e1a2ffb8be78a9f9f5210fa6a876
+
+      return array;
+    },
+<<<<<<< HEAD
+
+    map: function(collection, callback) {
+      let array=[];
+     if (!(collection instanceof Array))
+        collection = Object.values(collection)
+      for (let i = 0; i < collection.length; i++)
+        array.push(callback(collection[i]))
+=======
+    reduce: function() {
+>>>>>>> 9d11f0364ba3e1a2ffb8be78a9f9f5210fa6a876
 
       return array;
     },
